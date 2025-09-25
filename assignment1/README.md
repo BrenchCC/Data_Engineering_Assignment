@@ -1,6 +1,6 @@
 # Assignment1
 
-- env : `pip install -r requirements
+- env : `pip install -r requirements`
 - get data:
 ```bash
 cd assignment1
