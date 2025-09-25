@@ -1,0 +1,9 @@
+bs4
+pandas
+requests
+numpy==1.26.4
+jupyter
+tqdm
+openpyxl
+matplolib
+seaborn
