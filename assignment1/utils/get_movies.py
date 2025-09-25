@@ -43,7 +43,7 @@ def fetch_country(detail_url) -> str:
     try:
         # send request to get info
         response = session.get(detail_url, timeout=10)
-        response.raise_for_status()  # 检查请求是否成功
+        response.raise_for_status()  # check
 
         # parse html
         soup = BeautifulSoup(response.text, 'html.parser')
@@ -123,7 +123,7 @@ def get_movies_from_html(file_path) -> list:
 
         # Use multi-threading to process movie information extraction
         movies_data = []
-        with ThreadPoolExecutor(max_workers=10) as executor:  # 控制并发数，避免请求过于频繁
+        with ThreadPoolExecutor(max_workers=10) as executor:
             futures = [executor.submit(extract_movie_details, movie) for movie in movie_list]
 
             # Get results
@@ -140,7 +140,7 @@ def get_movies_from_html(file_path) -> list:
 
 
 if __name__ == "__main__":
-    html_file = 'IMDb.html'  # 本地HTML文件路径
+    html_file = 'IMDb.html'
 
     # Get movie data from HTML file
     movies_data = get_movies_from_html(html_file)
