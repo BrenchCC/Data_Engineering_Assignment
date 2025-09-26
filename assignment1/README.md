@@ -7,5 +7,5 @@ cd assignment1
 export PYTHONPATH=./
 python utils/get_movies.py
 ```
-- htlm file: [file](./IMDb.html)
+- html file: [file](./IMDb.html)
 - data analysis：[code](./Assignment01_Brench.ipynb)
