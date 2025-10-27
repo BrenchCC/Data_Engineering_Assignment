@@ -6,4 +6,5 @@ jupyter
 tqdm
 openpyxl
 matplolib
+datasets
 seaborn
