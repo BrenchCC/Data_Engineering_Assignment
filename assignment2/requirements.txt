@@ -7,3 +7,4 @@ tqdm
 openpyxl
 matplolib
 seaborn
+sklearn
